@@ -1,6 +1,11 @@
+let img;
+function preload() {
+  img = loadImage('pic.jpg');
+}
 function setup(){ 
   createCanvas(windowWidth, windowHeight);
   background(255,0,0);
+  image(img,0,0);
   var button;
    button = createButton('red');
    button.position(20, 19);
