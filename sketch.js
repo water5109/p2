@@ -1,24 +1,19 @@
-let img;
-function preload() {
-  img = loadImage('pic.jpg');
-}
 function setup(){ 
   createCanvas(windowWidth, windowHeight);
   background(255,0,0);
-  image(img, 0, 0);
   var button;
-  button = createButton('red');
-  button.position(20, 19);
-  button.mousePressed(changeCL1);
-  button = createButton('blue');
-  button.position(60, 19);
-  button.mousePressed(changeCL2);
-  button = createButton('black');
-  button.position(106, 19);
-  button.mousePressed(changeCL3);
+   button = createButton('red');
+   button.position(20, 19);
+   button.mousePressed(changeCL1);
+   button = createButton('blue');
+   button.position(60, 19);
+   button.mousePressed(changeCL2);
+   button = createButton('black');
+   button.position(106, 19);
+   button.mousePressed(changeCL3);
    button = createButton('random');
-  button.position(158, 19);
-  button.mousePressed(changeCL4);
+   button.position(158, 19);
+   button.mousePressed(changeCL4);
 }
 
 function changeCL1() {
